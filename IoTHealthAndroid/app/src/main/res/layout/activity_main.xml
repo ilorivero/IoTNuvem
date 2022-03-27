@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtGrausCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTemp"
+        app:layout_constraintTop_toTopOf="@+id/txtTemp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bpm"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBPM"
+        app:layout_constraintStart_toEndOf="@+id/txtBPM" />
+
+    <TextView
+        android:id="@+id/txtPercentual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSpO2"
+        app:layout_constraintStart_toEndOf="@+id/txtSpO2" />
+
+    <TextView
+        android:id="@+id/txtBPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:onClick="onClick"
+        android:text="@string/batimento"
+        android:textColor="#2196F3"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/iot_health"
+        android:textColor="#FF5722"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSpO2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="onClick"
+        android:text="@string/spo2"
+        android:textColor="#4CAF50"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="onClick"
+        android:text="@string/temp"
+        android:textColor="#673AB7"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPercentual" />
+
+    <ImageButton
+        android:id="@+id/btnFalarDados"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/bot_o_de_fala"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:tint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGrausCelsius"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <ImageView
+        android:id="@+id/imgCoracao"
+        android:layout_width="83dp"
+        android:layout_height="107dp"
+        android:contentDescription="@string/imagem_de_cora_o"
+        app:layout_constraintEnd_toStartOf="@+id/txtBPM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtBPM"
+        app:srcCompat="@drawable/coracao" />
+
+    <ImageView
+        android:id="@+id/imgSpO2"
+        android:layout_width="110dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/imagem_de_oximetro"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSpO2"
+        app:layout_constraintEnd_toStartOf="@+id/txtSpO2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtSpO2"
+        app:srcCompat="@drawable/spo2" />
+
+    <ImageView
+        android:id="@+id/imgTermometro"
+        android:layout_width="74dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/imagem_de_term_metro"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTemp"
+        app:layout_constraintEnd_toStartOf="@+id/txtTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTemp"
+        app:srcCompat="@drawable/termometro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

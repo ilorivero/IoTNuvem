@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IoT Health</string>
+    <string name="c">ºC</string>
+    <string name="bpm">bpm</string>
+    <string name="percent">%</string>
+    <string name="batimento">BPM</string>
+    <string name="iot_health">IoT Health</string>
+    <string name="spo2">SpO2</string>
+    <string name="temp">Temp</string>
+    <string name="bot_o_de_fala">Botão de Fala</string>
+    <string name="imagem_de_cora_o">Imagem de Coração</string>
+    <string name="imagem_de_oximetro">Imagem de Oximetro</string>
+    <string name="imagem_de_term_metro">Imagem de Termômetro</string>
+</resources>
