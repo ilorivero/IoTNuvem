@@ -5,8 +5,6 @@ import adafruit_mlx90614
 import adafruit_ahtx0
 import pyrebase
 
-
-#i2c = io.I2C(board.SCL, board.SDA, frequency=100000)
 i2c= board.I2C()
 mlx = adafruit_mlx90614.MLX90614(i2c)
 aht = adafruit_ahtx0.AHTx0(i2c)
