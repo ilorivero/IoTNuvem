@@ -12,10 +12,10 @@ mlx = adafruit_mlx90614.MLX90614(i2c)
 aht = adafruit_ahtx0.AHTx0(i2c)
 
 config = {
-  "apiKey": "AIzaSyABYrAOaCWotXFxrXMfFFdyeuShi6vzeyQ",
-  "authDomain": "184374708100.firebaseapp.com",
-  "databaseURL": "https://iotnanuvem-default-rtdb.firebaseio.com/",
-  "storageBucket": "184374708100.appspot.com"
+  "apiKey": "----- chave da API do Firebase -----",
+  "authDomain": "--- código do projeto ---.firebaseapp.com",
+  "databaseURL": "https://----- id do projeto do realtime database ----.firebaseio.com/",
+  "storageBucket": "--- código do projeto ---.appspot.com"
 }
 
 firebase = pyrebase.initialize_app(config)
